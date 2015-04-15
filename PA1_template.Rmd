@@ -53,7 +53,7 @@ The maximum number of steps taken, on average, was `r maximumSteps$steps` during
 naValues <- sum(is.na(data))
 naValues  
 ```
-There are `r naValues` in the dataset.  
+There are `r naValues` NA values in the dataset.  
 
 *2.Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be* 
 *sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.*

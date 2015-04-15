@@ -82,7 +82,7 @@ naValues
 ```
 ## [1] 2304
 ```
-There are 2304 in the dataset.  
+There are 2304 NA values in the dataset.  
 
 *2.Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be* 
 *sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.*
