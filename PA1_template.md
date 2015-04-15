@@ -44,8 +44,8 @@ median(stepTotalByDay$steps)
 ```
 ## [1] 10765
 ```
-The mean total number of steps taken per day is 'r mean(stepTotalByDay$steps)'
-The median total number of steps taken per day is 'r median(stepTotalByDay$steps)'
+The mean total number of steps taken per day is 1.0766189 &times; 10<sup>4</sup>
+The median total number of steps taken per day is 10765
 
 ## What is the average daily activity pattern?
 *1.Make a time series plot (i.e. type = "l") of the 5-minute interval (x-axis)* 
@@ -69,7 +69,7 @@ maximumSteps$interval
 ```
 ## [1] 835
 ```
-The maximum number of steps taken, on average, was 'r maximumSteps$steps' during the 'r maximumSteps$interval'th interval
+The maximum number of steps taken, on average, was 206.1698113 during the 835th interval
 
 ## Imputing missing values
 *1.Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with NAs)*
@@ -82,7 +82,7 @@ naValues
 ```
 ## [1] 2304
 ```
-There are 'r naValues' in the dataset.  
+There are 2304 in the dataset.  
 
 *2.Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be* 
 *sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.*
@@ -127,9 +127,10 @@ median(dataCompleteStepTotal$steps)
 ```
 ## [1] 10766.19
 ```
-The mean total number of steps taken per day with the new dataset is 'r mean(dataCompleteStepTotal$steps)'. This is the same mean
+The mean total number of steps taken per day with the new dataset is 1.0766189 &times; 10<sup>4</sup>. This is the same mean
 that was found for the original dataset.
-The median total number of steps taken per day with the new dataset is 'r median(dataCompleteStepTotal$steps)'. This is slightly different than the median, 'r median(stepTotalByDay$steps)' that was found for the original dataset.
+
+The median total number of steps taken per day with the new dataset is 1.0766189 &times; 10<sup>4</sup>. This is slightly different than the median, 10765 that was found for the original dataset.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 *Create a new factor variable in the dataset with two levels -- "weekday" and "weekend" indicating whether a given* 

@@ -233,8 +233,8 @@ hist(stepTotalByDay$steps, breaks = 10, main = &quot;Total Steps Per Day&quot;, 
 <pre><code>## [1] 10765
 </code></pre>
 
-<p>The mean total number of steps taken per day is &#39;r mean(stepTotalByDay$steps)&#39;
-The median total number of steps taken per day is &#39;r median(stepTotalByDay$steps)&#39;</p>
+<p>The mean total number of steps taken per day is 1.0766189 &times; 10<sup>4</sup>
+The median total number of steps taken per day is 10765</p>
 
 <h2>What is the average daily activity pattern?</h2>
 
@@ -256,7 +256,7 @@ maximumSteps$interval
 <pre><code>## [1] 835
 </code></pre>
 
-<p>The maximum number of steps taken, on average, was &#39;r maximumSteps$steps&#39; during the &#39;r maximumSteps$interval&#39;th interval</p>
+<p>The maximum number of steps taken, on average, was 206.1698113 during the 835th interval</p>
 
 <h2>Imputing missing values</h2>
 
@@ -269,7 +269,7 @@ naValues
 <pre><code>## [1] 2304
 </code></pre>
 
-<p>There are &#39;r naValues&#39; in the dataset.  </p>
+<p>There are 2304 in the dataset.  </p>
 
 <p><em>2.Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be</em> 
 <em>sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.</em>
@@ -307,9 +307,10 @@ hist(dataCompleteStepTotal$steps, breaks = 10, main = &quot;Total Steps Per Day&
 <pre><code>## [1] 10766.19
 </code></pre>
 
-<p>The mean total number of steps taken per day with the new dataset is &#39;r mean(dataCompleteStepTotal$steps)&#39;. This is the same mean
-that was found for the original dataset.
-The median total number of steps taken per day with the new dataset is &#39;r median(dataCompleteStepTotal$steps)&#39;. This is slightly different than the median, &#39;r median(stepTotalByDay$steps)&#39; that was found for the original dataset.</p>
+<p>The mean total number of steps taken per day with the new dataset is 1.0766189 &times; 10<sup>4</sup>. This is the same mean
+that was found for the original dataset.</p>
+
+<p>The median total number of steps taken per day with the new dataset is 1.0766189 &times; 10<sup>4</sup>. This is slightly different than the median, 10765 that was found for the original dataset.</p>
 
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>
 

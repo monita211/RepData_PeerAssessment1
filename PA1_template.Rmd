@@ -28,8 +28,8 @@ hist(stepTotalByDay$steps, breaks = 10, main = "Total Steps Per Day", xlab = "St
 mean(stepTotalByDay$steps)
 median(stepTotalByDay$steps)
 ```
-The mean total number of steps taken per day is 'r mean(stepTotalByDay$steps)'
-The median total number of steps taken per day is 'r median(stepTotalByDay$steps)'
+The mean total number of steps taken per day is `r mean(stepTotalByDay$steps)`
+The median total number of steps taken per day is `r median(stepTotalByDay$steps)`
 
 ## What is the average daily activity pattern?
 *1.Make a time series plot (i.e. type = "l") of the 5-minute interval (x-axis)* 
@@ -45,7 +45,7 @@ with(averageDailyPattern, plot(interval, steps, type = 'l', main = "Average Step
 maximumSteps <- averageDailyPattern[averageDailyPattern$steps == max(averageDailyPattern$steps), ]
 maximumSteps$interval
 ```
-The maximum number of steps taken, on average, was 'r maximumSteps$steps' during the 'r maximumSteps$interval'th interval
+The maximum number of steps taken, on average, was `r maximumSteps$steps` during the `r maximumSteps$interval`th interval
 
 ## Imputing missing values
 *1.Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with NAs)*
@@ -53,7 +53,7 @@ The maximum number of steps taken, on average, was 'r maximumSteps$steps' during
 naValues <- sum(is.na(data))
 naValues  
 ```
-There are 'r naValues' in the dataset.  
+There are `r naValues` in the dataset.  
 
 *2.Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be* 
 *sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.*
@@ -79,9 +79,10 @@ hist(dataCompleteStepTotal$steps, breaks = 10, main = "Total Steps Per Day", xla
 mean(dataCompleteStepTotal$steps)
 median(dataCompleteStepTotal$steps)
 ```
-The mean total number of steps taken per day with the new dataset is 'r mean(dataCompleteStepTotal$steps)'. This is the same mean
+The mean total number of steps taken per day with the new dataset is `r mean(dataCompleteStepTotal$steps)`. This is the same mean
 that was found for the original dataset.
-The median total number of steps taken per day with the new dataset is 'r median(dataCompleteStepTotal$steps)'. This is slightly different than the median, 'r median(stepTotalByDay$steps)' that was found for the original dataset.
+
+The median total number of steps taken per day with the new dataset is `r median(dataCompleteStepTotal$steps)`. This is slightly different than the median, `r median(stepTotalByDay$steps)` that was found for the original dataset.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 *Create a new factor variable in the dataset with two levels -- "weekday" and "weekend" indicating whether a given* 
